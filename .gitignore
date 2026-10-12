@@ -1,0 +1,33 @@
+# External repositories and model assets
+LivePortrait/
+FaceFusion/
+SimSwap/
+InstantID/
+PhotoMaker/
+DreamID/
+**/pretrained_weights/
+**/checkpoints/
+**/models/
+.cache/
+.conda/
+conda-envs/
+
+# Generated artifacts and notebook state
+out_*/
+outputs/
+generated/
+workshop_results_v6/
+*.mp4
+*.webm
+*.onnx
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+*.log
+.ipynb_checkpoints/
+.DS_Store
+
+# Local secrets
+.env
