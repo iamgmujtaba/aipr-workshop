@@ -70,19 +70,3 @@ three guarded variants and produced six non-empty MP4 artifacts (animated and co
 outputs). The remaining methods remain explicitly skipped or audit-only unless their
 separate dependencies, checkpoints, and consented inputs are provided.
 
-## PhotoMaker fallback
-
-PhotoMaker's repository documents Mac M1/M2 support:
-
-```bash
-conda create -n photomaker python=3.10 -y
-conda activate photomaker
-python -m pip install --upgrade pip
-python -m pip install torch==2.1.2
-python -m pip install --no-deps "diffusers==0.30.0" "transformers==4.44.2" "huggingface-hub==0.24.6" "peft==0.12.0" "tokenizers==0.19.1" "numpy==1.26.4" "scipy==1.13.1"
-python -m pip install -r PhotoMaker/requirements.txt
-python -m pip install einops onnxruntime
-python -m pip install git+https://github.com/TencentARC/PhotoMaker.git
-```
-
-
