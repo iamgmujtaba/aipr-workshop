@@ -2,7 +2,7 @@
 
 ## Canonical tutorial
 
-Use [Deepfake_Generation_Workshop.ipynb](Deepfake_Generation_Workshop.ipynb). It is the maintained tutorial and has been tested on the Linux RTX 6000 Ada host with Python 3.10 and CUDA 12.4. The v5 notebook remains available as a historical compatibility version.
+Use [Deepfake_Generation_Workshop.ipynb](Deepfake_Generation_Workshop.ipynb). It is the maintained tutorial and has been tested on the Linux RTX 6000 Ada host with Python 3.10 and CUDA 12.4. 
 
 ## Setup
 
@@ -19,16 +19,8 @@ conda install -n aipr -c conda-forge ffmpeg -y
 python -m ipykernel install --user --name aipr --display-name "Python 3.10 (aipr)"
 ```
 
-For macOS Apple Silicon, replace `onnxruntime-gpu` with `onnxruntime` and install the
-macOS-compatible PyTorch wheel:
 
-```bash
-python -m pip uninstall -y onnxruntime-gpu
-python -m pip install onnxruntime
-```
-
-The notebook clones missing official repositories with a bounded timeout. It does not install
-their conflicting dependencies into `aipr`; use a separate environment for PhotoMaker:
+The notebook clones missing official repositories with a bounded timeout. It does not install their conflicting dependencies into `aipr`; use a separate environment for PhotoMaker:
 
 ```bash
 conda create -n photomaker python=3.10 -y
